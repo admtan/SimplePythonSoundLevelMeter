@@ -8,7 +8,7 @@ if [ "$1" = "config" ]; then
 fi
 
 if [ -e /tmp/8a32ada4c3e0c1f0.csv ]; then
-	value=$(cud -f 2 /tmp/8a32ada4c3e0c1f0.csv)
+	value=$(cut -f 2 /tmp/8a32ada4c3e0c1f0.csv)
 	echo "soundlevel.value ${value}"	
 	exit 0
 else
